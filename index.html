@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h2>Iltimos 767px dan kichik ekranda oching</h2>
+  <div class="mobile">
+    <div class="information wrap">
+      <button class="close_information"></button>
+      <div class="modalAuthor2 btitle"></div>
+      <div class="btitle lengthChiqim">Chiqimlar soni: <span></span></div>
+      <div class="btitle" id="chiqimSumInfo">Chiqim summasi: <span>0 UZS</span></div>
+      <div class="btitle lengthKirim">Kirimlar soni: <span></span></div>
+      <div class="btitle" id="kirimSumInfo">Kirim summasi: <span>0 UZS</span></div>
+    </div>
+    <div class="sozlama wrap">
+      <div class="info">
+        <div class="btitle">Sozlamalar</div>
+      </div>
+      <button class="closeSozlama"></button>
+      <div class="btitle change">
+        O'zgatirish
+      </div>
+      <div class="changes">
+        <button class="changes_btn changeInfo">Ma'lumotlar</button>
+      </div>
+    </div>
+    <div class="reg">
+      <div class="btitle" style="text-align: center;">Ro'yhatdan o'tish</div>
+      <input type="text" class="name" placeholder="Ism">
+      <div class="danger">*iltimos ismingizni kiriting</div>
+      <input type="text" class="surname" placeholder="Familiya">
+      <div class="danger1">*iltimos familyangizni kiriting</div>
+      <div class="title">Ixtiyoriy</div>
+      <input type="password" class="parol" placeholder="Parol">
+      <div class="check">
+        <input type="checkbox" id="parol">
+        <label for="parol">Parolni ko'rish</label>
+      </div>
+      <button class="reg_btn">Tasdiqlash</button>
+    </div>
+    <div class="code">
+      <div class="code__view"></div>
+      <div class="btns">
+        <button class="codeBtn">1</button>
+        <button class="codeBtn">2</button>
+        <button class="codeBtn">3</button>
+        <button class="codeBtn">4</button>
+        <button class="codeBtn">5</button>
+        <button class="codeBtn">6</button>
+        <button class="codeBtn">7</button>
+        <button class="codeBtn">8</button>
+        <button class="codeBtn">9</button>
+        <button class="code__hide" id="codeHide">
+          <img src="img/eye-slash.svg" class="eye1 active" alt="">
+          <img src="img/eye.svg" class="eye2" alt="">
+        </button>
+        <button class="codeBtn">0</button>
+        <button class="clear" id="codeClear"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000" class="bi bi-backspace" viewBox="0 0 16 16">
+          <path d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z"/>
+          <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1h7.08zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-7.08z"/>
+        </svg></button>
+      </div>
+      <div class="next">
+        <div class="skip">Parolni o'chirish</div>
+        <button id="ok">Ok</button>
+      </div>
+    </div>
+    <div class="info">
+      <button class="open-modal"><span></span></button>
+      <div class="title active">Chiqim</div>
+      <div class="author"></div>
+    </div>
+    <div class="pages chiqim active ">
+      <div class="container">
+        <div class="btitle" id="chiqimSum">Umumiy: <span>0 UZS</span></div>
+        <div class="items">
+        </div>
+      </div>
+    </div>
+    <div class="pages harajat">
+      <div class="container">
+        <div class="btitle">
+          Sarflangan pulingiz haqida ma'lumot
+        </div>
+        <div class="box">
+          <div class="input">
+            <div class="title">Summani kiriting (UZS)</div>
+            <input type="number" placeholder="Summa">
+            <div class="danger2">*iltimos summani kiriting</div>
+            <div class="title">Eslatma</div>
+            <textarea placeholder="Eslatma.."></textarea>
+          </div>
+        </div>
+        <div class="add_input">
+          <button class="btn btn_input">+</button>
+        </div>
+        <div class="cat_btn">
+          <button class="btn active">Chiqim</button>
+          <button class="btn">Kirim</button>
+        </div>
+        <button class="add_btn">Saqlash</button>
+      </div>
+    </div>
+    <div class="pages kirim">
+      <div class="container">
+        <div class="btitle" id="chiqimSum">Umumiy: <span>0 UZS</span></div>
+        <div class="items">
+         
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <button data-link="chiqim" class="chiqim_btn active"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+          fill="#ccc" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+        </svg>Chiqim</button>
+      <button data-link="harajat" class="add">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+          <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+          <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        </svg>Sarf
+      </button>
+      <button data-link="kirim" class="kirim_btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ccc"
+          class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+        </svg>Kirim</button>
+    </nav>
+    <div class="success">
+      Tasdiqlandi
+    </div>
+    <div class="modal" id="modal">
+      <div class="modal-link">
+        <div class="logo">
+            <div class="logo-box">
+              <img src="img/logo.png" alt="" >
+            </div>
+            <div class="title modalAuthor"></div>
+        </div>
+          <div class="itemLink sozlamaOpen">
+              <div class="modal-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                </svg>
+              </div>
+              <p>Sozlamalar</p>
+          </div>
+        <div class="itemLink" id="start">
+              <div class="modal-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                  <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+                </svg>
+              </div>
+              <p>Tozalash</p>
+          </div>
+      </div>
+      <div class="modal-bottom">
+        <div class="itemLink">
+          <div class="modal-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
+              <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+              <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+            </svg>
+          </div>
+          <p>Tungi rejim <button class="night"></button>
+          </p>
+      </div>
+        <div class="itemLink">
+          <div class="modal-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+          </div>
+          <p>+998 99 826 61 13
+            <span>Call-center</span>
+          </p>
+      </div>
+
+      <button class="exit">Chiqish</button>
+      <div class="version">Version 1.0</div>
+      </div>
+  </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
